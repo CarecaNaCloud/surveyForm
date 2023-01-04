@@ -1,0 +1,2 @@
+thats is people's thoughts inquiry form from a plant life coorporation, developed by the sales force
+to know, whats are the prefered plants of the clients and if its allocated inside or  outside the house
