@@ -180,17 +180,17 @@ textarea {
         content: "What are your choices";
     } 
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 379px) {
     .outdoor {
-        margin-left: 20px;
+        margin-left: 0px;
     }
 }
 
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 210px) {
     .dropdown {
         display: flex;
         flex-direction: column;
         align-content: center;
-        text-indent: 20px;
+        text-indent: 30px;
     }
 }
