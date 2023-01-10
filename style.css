@@ -180,3 +180,7 @@ textarea {
         content: "What are your choices";
     } 
 }
+@media only screen and (min-width: 250px) {
+    #indoorOutdoor {
+        justify-content: center;
+}
