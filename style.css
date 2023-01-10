@@ -185,3 +185,12 @@ textarea {
         margin-left: 20px;
     }
 }
+
+@media only screen and (max-width: 200px) {
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-indent: 20px;
+    }
+}
