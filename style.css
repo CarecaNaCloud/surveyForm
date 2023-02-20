@@ -206,6 +206,9 @@ textarea::placeholder {
 
 
 /* Submit Button */
+.buttonWrapper{
+    margin: o auto
+}
 
 .submitBtn {
     margin: 20px auto;
