@@ -15,6 +15,8 @@
     --purple: #931f34;
     --darkGreen: #24310B;
     --ligtText: #eee;    
+
+    --alphaColor: rgba(0, 77, 26, 0.4);
 }
 
 * {
@@ -78,7 +80,7 @@ form {
 }
 
 input {
-    background-color: rgba(30, 140, 0, 0.4);
+    background-color: var(--alphaColor);
 }
 
 /* PERSONAL INFO */
@@ -147,7 +149,7 @@ form fieldset legend {
     height: 30px;
     font-size: var(--textXS);
     color: var(--ligtText);
-    background-color: rgba(30, 140, 0, 0.4);
+    background-color: var(--alphaColor);
 }
 
 /*** FORM PLANTS CHOICES ***/
@@ -194,7 +196,7 @@ textarea {
     padding-top: 3px;
     font-size: var(--textS);
     color: var(--ligtText);
-    background-color: rgba(30, 140, 0, 0.4);
+    background-color: var(--alphaColor);
 }
 
 textarea::placeholder {
