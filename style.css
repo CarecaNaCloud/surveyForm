@@ -231,13 +231,13 @@ textarea::placeholder {
     background-color: #89d8d3;
     
     background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
-    background-image: linear-gradient(315deg, #6cd591 0%,     #badd67 74%);
+    background-image: linear-gradient(315deg, #7fdfa1 0%,     #badd67 74%);
   }
 
   .submitBtn:active {
     translate: scale(0.98)
   }
-  
+
   .submitBtn span {
     width: 100%;
     height: 100%;
