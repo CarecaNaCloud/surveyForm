@@ -1,6 +1,6 @@
 :root {
 
-    --textXS: 0.9rem;
+    --textXS: 0.95rem;
     --textS: 1rem;
     --textM: 1.05rem;
     --textBig: 1.15rem;
@@ -27,7 +27,6 @@
 
 body{
     background-image: url(./imgs/PlantinhasTeste.png), linear-gradient(120deg, #ebfd77 0%, #96e6a1 100%); /*webgradients.com 011 dusty grass  d4fc79 */
-    background-position: ;
     min-height: 100vh;
     margin-top: 1.5rem;
     margin-right: 2vw;
@@ -175,7 +174,7 @@ fieldset#plants {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     justify-items: center;
-    font-size: var(--textM);
+    font-size: var(--textBig);
 }
 
 #choices label {
