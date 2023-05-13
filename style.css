@@ -206,11 +206,9 @@ textarea::placeholder {
 
 
 /* Submit Button */
-.buttonWrapper{
-    margin: 0 auto;
-}
 
 .submitBtn {
+    display: block;
     margin: 20px auto;
     width: 50%;
     border: none;
