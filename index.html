@@ -9,150 +9,141 @@
     </head>
 
     <body>
-
         <div id="background">    
-
-            <!-- Logo -->
             <header>
                 <h1 id="title"><span id="logo">plantLife </span><span id="hifen">- </span><span class="hiddenInlineBlock">What will be the plant for 2023</span></h1>
                 <p id="description"><span class="hiddenInlineBlock">Are you choose inside or outside... Monstera or a Fern?</span></p>
             </header>
-
-            <!-- Form -->
-            <form id="survey-form">
+            <main>
+                <form id="survey-form">
+                    <fieldset id="personal-info">
+                        <legend id="personalInfoLegend">A bit about you</legend>
+    
+                        <label id="name-label" for="name"><span class="personalInfoSpanNameEmail">Name</span>
+                            <input id="name" class="block" type="text" placeholder="Jeremy Smith" required />
+                        </label>
+                        
+                        <label id="email-label" for="email"><span class="personalInfoSpanNameEmail">Email</span>
+                            <input id="email" class="block" type="email" placeholder="youremail@gmail.com" required/>  <!--verify the validation for the form-->
+                        </label>
+    
+                        <div class="personalInfoAgeGenre">
+                            <label id="number-label" for="number" required><span class="personalInfoSpanAgeGenre">Age</span>
+                                <input id="number" type="number" name="age" min="16" max="150" placeholder="Age"/>
+                            </label>
+                            
+                            <label id="dropdown-label" class="dropdown" for="dropdown"><span class="personalInfoSpanAgeGenre">Genre</span> 
+                                <!--The for attribute have dropdown value because this is an grade project, and is an requirement that the select element have an id="dropdown", but freeCodeCamp don`t specified that field to be a genre option, the element fill is student choice-->
+                                <select id="dropdown" name="genre">
+                                    <option value="men">Men</option>
+                                    <option value="women">Women</option>
+                                    <option value="lesbian">Lesbian</option>
+                                    <option value="gay">Gay</option>
+                                    <option value="bisex">Bisex</option>
+                                    <option value="transvestite">Transverstite</option>
+                                    <option value="transgender">Trangender</option>
+                                    <option value="queer">Queer</option>
+                                    <option value="intersex">Intersex</option>
+                                    <option value="asexual">Asexual</option>
+                                    <option value="aromantic">Aromantic</option>
+                                    <option value="plus">+</option>
+                                </select>
+                            </label>
+                        </div>
+                    </fieldset>
                 
-                <!-- Personal Info -->
-                <fieldset id="personal-info">
+                    <fieldset id="plants">
+                        <legend>Plants</legend>
+                        
+                        <div id="indoorOutdoor">
+                            <label class="indoor" for="indoor">Indoor
+                                <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" />
+                            </label>
+    
+                            <label class="outdoor" for="outdoor">
+                                <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" /> Outdoor
+                            </label>
+                        </div>
+    
+                        <div id="choices">
+                            <label for="sansevieira">
+                                <input id="sansevieira" type="checkbox" name="plant[]" value="sansevieira" /> Snake Plant</span>
+                            </label>
+                            
+                            <label for="zamioculcas">
+                                <input id="zamioculcas" type="checkbox" name="plant[]" value="zamioculcas" /> Zamioculcas
+                            </label>
+                            
+                            <label for="aloe-vera">
+                                <input id="aloe-vera" type="checkbox" name="plant[]" value="aloe-vera" /> Aloe-vera
+                            </label>
+                            
+                            <label for="marble-queen-photos">
+                                <input id="marble-queen-photos" type="checkbox" name="plant[]" value="marble-queen-photos" /> Devil's Ivy
+                            </label>
+                            
+                            <label for="fiddle-leaf-fig">
+                                <input id="fiddle-leaf-fig" type="checkbox" name="plant[]" value="fiddle-leaf-fig" /> Fiddle Leaf Fig
+                            </label>
+                            
+                            <label for="palm">
+                                <input id="palm" type="checkbox" name="plant[]" value="palm" /> Palm
+                            </label>
+                            
+                            <label for="monstera">
+                                <input id="monstera" type="checkbox" name="plant[]" value="monstera" /> Monstera
+                            </label>
+                            
+                            <label for="lavander">
+                                <input id="lavander" type="checkbox" name="plant[]" value="lavander" /> Lavander
+                            </label>
+                            
+                            <label for="english-ivy">
+                                <input id="english-ivy" type="checkbox" name="plant[]" value="english-ivy" /> English-ivy
+                            </label>
+                            
+                            <label for="suculent">
+                                <input id="suculent" type="checkbox" name="plant[]" value="suculent" /> Suculent
+                            </label>
+                            
+                            <label for="dumb-cane">
+                                <input id="dumb-cane" type="checkbox" name="plant[]" value="dumb-cane" /> Dieffenbachia
+                            </label>
+                            
+                            <label for="spider-plant">
+                                <input id="spider-plant" type="checkbox" name="plant[]" value="spider-plant" /> Spider-plant
+                            </label>
+                            
+                            <label for="prayer">
+                                <input id="prayer" type="checkbox" name="plant[]" value="prayer" /> Prayer 
+                            </label>
+                            
+                            <label for="boston-fern">
+                                <input id="boston-fern" type="checkbox" name="plant[]" value="boston-fern" /> Boston Fern
+                            </label>
+                            
+                            <label for="peperomia">
+                                <input id="peperomia" type="checkbox" name="plant[]" value="peperomia" /> Peperomia
+                            </label>
+                            
+                            <label for="spathiphyllum">
+                                <input id="spathiphyllum" type="checkbox" name="plant[]" value="spathiphyllum" /> Lily
+                            </label>
+                            
+                            <label for="birds-of-paradise">
+                                <input id="birds-of-paradise" type="checkbox" name="plant[]" value="birds-of-paradise" /> Birds Of Paradise
+                            </label>
+                        </div>        
+    
+                        <textarea placeholder="Have other favorites, tell us what's that love?!"></textarea>
+                        
+                    </fieldset>
                     
-                    <legend id="personalInfoLegend">A bit about you</legend>
-
-                    <label id="name-label" for="name"><span class="personalInfoSpanNameEmail">Name</span>
-                        <input class="block" id="name" type="text" placeholder="Jeremy Smith" required />
-                    </label>
-                    
-                    <label id="email-label" for="email"><span class="personalInfoSpanNameEmail">Email</span>
-                        <input class="block" id="email" type="email" placeholder="youremail@gmail.com" required/>  <!--verify the validation for the form-->
-                    </label>
-
-                <div class="personalInfoAgeGenre">
-                    <label id="number-label" for="number" required><span class="personalInfoSpanAgeGenre">Age</span>
-                        <input id="number" type="number" min="16" max="150" placeholder="Age"/>
-                    </label>
-                    
-                    <label class="dropdown" for="dropdown"><span class="personalInfoSpanAgeGenre">Genre</span> 
-                        <!--The for attribute have dropdown value because this is an grade project, and is an requirement that the select element have an id="dropdown", but freeCodeCamp don`t specified that field to be a genre option, the element fill is student choice-->
-                        <select id="dropdown" name="genre">
-                            <option value="men">Men</option>
-                            <option value="women">Women</option>
-                            <option value="lesbian">Lesbian</option>
-                            <option value="gay">Gay</option>
-                            <option value="bisex">Bisex</option>
-                            <option value="transvestite">Transverstite</option>
-                            <option value="transgender">Trangender</option>
-                            <option value="queer">Queer</option>
-                            <option value="intersex">Intersex</option>
-                            <option value="asexual">Asexual</option>
-                            <option value="aromantic">Aromantic</option>
-                            <option value="plus">+</option>
-                        </select>
-                    </label>
-                </div>
-            </fieldset>
-            
-            <!-- Plants Choices -->
-            <fieldset id="plants">
-
-                <legend>Plants</legend>
-
-                <div id="indoorOutdoor">
-                    <label class="indoor" for="indoor">Indoor
-                        <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" />
-                    </label>
-
-                    <label class="outdoor" for="outdoor">
-                        <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" /> Outdoor
-                    </label>
-                </div>
-
-                    <div id="choices">
-                        <label for="sansevieira">
-                            <input id="sansevieira" type="checkbox" name="plant[]" value="sansevieira" /> Snake Plant</span>
-                        </label>
-                        
-                        <label for="zamioculcas">
-                            <input id="zamioculcas" type="checkbox" name="plant[]" value="zamioculcas" /> Zamioculcas
-                        </label>
-                        
-                        <label for="aloe-vera">
-                            <input id="aloe-vera" type="checkbox" name="plant[]" value="aloe-vera" /> Aloe-vera
-                        </label>
-                        
-                        <label for="marble-queen-photos">
-                            <input id="marble-queen-photos" type="checkbox" name="plant[]" value="marble-queen-photos" /> Devil's Ivy
-                        </label>
-                        
-                        <label for="fiddle-leaf-fig">
-                            <input id="fiddle-leaf-fig" type="checkbox" name="plant[]" value="fiddle-leaf-fig" /> Fiddle Leaf Fig
-                        </label>
-                        
-                        <label for="palm">
-                            <input id="palm" type="checkbox" name="plant[]" value="palm" /> Palm
-                        </label>
-                        
-                        <label for="monstera">
-                            <input id="monstera" type="checkbox" name="plant[]" value="monstera" /> Monstera
-                        </label>
-                        
-                        <label for="lavander">
-                            <input id="lavander" type="checkbox" name="plant[]" value="lavander" /> Lavander
-                        </label>
-                        
-                        <label for="english-ivy">
-                            <input id="english-ivy" type="checkbox" name="plant[]" value="english-ivy" /> English-ivy
-                        </label>
-                        
-                        <label for="suculent">
-                            <input id="suculent" type="checkbox" name="plant[]" value="suculent" /> Suculent
-                        </label>
-                        
-                        <label for="dumb-cane">
-                            <input id="dumb-cane" type="checkbox" name="plant[]" value="dumb-cane" /> Dieffenbachia
-                        </label>
-                        
-                        <label for="spider-plant">
-                            <input id="spider-plant" type="checkbox" name="plant[]" value="spider-plant" /> Spider-plant
-                        </label>
-                        
-                        <label for="prayer">
-                            <input id="prayer" type="checkbox" name="plant[]" value="prayer" /> Prayer 
-                        </label>
-                        
-                        <label for="boston-fern">
-                            <input id="boston-fern" type="checkbox" name="plant[]" value="boston-fern" /> Boston Fern
-                        </label>
-                        
-                        <label for="peperomia">
-                            <input id="peperomia" type="checkbox" name="plant[]" value="peperomia" /> Peperomia
-                        </label>
-                        
-                        <label for="spathiphyllum">
-                            <input id="spathiphyllum" type="checkbox" name="plant[]" value="spathiphyllum" /> Lily
-                        </label>
-                        
-                        <label for="birds-of-paradise">
-                            <input id="birds-of-paradise" type="checkbox" name="plant[]" value="birds-of-paradise" /> Birds Of Paradise
-                        </label>
-                    </div>        
-
-                    <textarea placeholder="Have other favorites, tell us what's that love?!"></textarea>
-                
-                </fieldset>
-                
-                <div class="buttonWrapper">
-                    <button id="submit" class="submitBtn" type="submit"><span>Submit</span></button>
-                </div>
-                
-            </form>
+                    <div class="buttonWrapper">
+                        <button id="submit" class="submitBtn" type="submit"><span>Submit</span></button>
+                    </div>
+                </form>
+            </main>
         </div>
     </body>
 </html>
