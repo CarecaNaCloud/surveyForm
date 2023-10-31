@@ -52,7 +52,7 @@ body{
     color: var(--orange);
 }
 #title::after {
-    content: " Plant Of The Year"
+    content: " Plant of the Year"
 }
 #logo {
     font-size: var(--textLogo);
