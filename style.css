@@ -274,7 +274,7 @@ textarea::placeholder {
     }
     #title::after {
         display: none;
-        content: " Bests Plants 2023";
+        content: " Plant of the year";
     } 
     #description::after {
         display: none;
