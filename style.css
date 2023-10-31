@@ -52,7 +52,7 @@ body{
     color: var(--orange);
 }
 #title::after {
-    content: " Bests Plants 2023"
+    content: " Plant Of The Year"
 }
 #logo {
     font-size: var(--textLogo);
@@ -274,7 +274,7 @@ textarea::placeholder {
     }
     #title::after {
         display: none;
-        content: " Plant of the year";
+        content: " Plant Of The Year";
     } 
     #description::after {
         display: none;
